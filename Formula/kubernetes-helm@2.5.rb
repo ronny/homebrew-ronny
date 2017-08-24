@@ -6,13 +6,6 @@ class KubernetesHelmAT25 < Formula
       :revision => "7cf31e8d9a026287041bae077b09165be247ae66"
   head "https://github.com/kubernetes/helm.git"
 
-  bottle do
-    cellar :any_skip_relocation
-    sha256 "9210f647404f11ba0f4b6eb4b9723de0ce3c005a301732cfd3ad6e35504aa69e" => :sierra
-    sha256 "88084b5f890ecd0da9306aea1e840ca274f10e9054a617ec027b807f44cdbb26" => :el_capitan
-    sha256 "01bd3eedfbed2600f05a5733c21bad6cd4f8965dc55d9f08026fffa2f89fcc20" => :yosemite
-  end
-
   keg_only :versioned_formula
 
   depends_on :hg => :build
